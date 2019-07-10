@@ -1,0 +1,17 @@
+{
+  "name": "challenge-06",
+  "version": "1.0.0",
+  "main": "linked-list.js",
+  "scripts": {
+    "test": "-- verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0"
+  },
+  "dependencies": {},
+  "description": ""
+}
