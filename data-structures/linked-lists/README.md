@@ -11,7 +11,7 @@
 #### [`Code Challenges Folder`](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges)
 
 ## Code Challenges
-#### 1) [`Linked-Lists`](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/challenge-06)
+#### 1) [`Linked-Lists`](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/data-structures/linked-lists)
     * adds `append()` method that takes in a `value` and adds it to the end of a list
     * adds `includes()` method that checks if a `value` is included in a list
     * adds `insertBefore()` method that inserts a `new value` before an `existing value` in a list
