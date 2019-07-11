@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "linked-list.js",
   "scripts": {
-    "test": "jest -- verbose --coverage"
+    "test": "jest -- verbose --coverage",
+    "lint": "./node_modules/eslint/bin/eslint.js **/*.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,8 @@
     "eslint": "^6.0.1",
     "jest": "^24.8.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lint": "^0.7.0"
+  },
   "description": ""
 }
