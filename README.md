@@ -4,17 +4,15 @@
 
 
 ## Table of Contents
-#### [Code Challenges Folder](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges)
-#### [Data Structures Folder](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/data-structures)  
 
-## Code Challenges  
+#### [Code Challenges](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges)
   * placeholder
 
 
 
 
 
-## Data Strcutures  
+#### [Data Structures](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/data-structures)  
  * [Linked-Lists](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/data-structures/linked-lists)
   
   
