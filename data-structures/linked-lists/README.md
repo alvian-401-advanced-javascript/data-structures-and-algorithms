@@ -17,9 +17,9 @@
    * adds `insert()` method that can add a new node with given data
 
 #### ll-insertions
-    * adds `append()` method that takes in a `value` and adds it to the end of a list
-    * adds `insertBefore()` method that inserts a `new value` before an `existing value` in a list
-    * adds `insertAfter()` method that inserts a `new value` after an `existing value` in a list  
+    * adds append() method that takes in a value nand adds it to the end of a list  
+    * adds insertBefore() method that inserts a new value before an existing value in a list  
+    * adds insertAfter() method that inserts a new value after an existing value in a list    
 
 #### ll_kth_from_end
    * adds method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
@@ -27,7 +27,7 @@
 
 
 #### Running the app
-* `node ``
+* node
 
 
   
