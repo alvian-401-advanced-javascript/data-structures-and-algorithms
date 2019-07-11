@@ -82,7 +82,4 @@ class LinkedList {
 
 }
 
-let list = new LinkedList();
-
-
 module.exports = LinkedList;
