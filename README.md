@@ -20,10 +20,6 @@
 
 
 
-#### Running the app
-* `npm start`
-
-
   
 #### Tests
 * How do you run tests?
