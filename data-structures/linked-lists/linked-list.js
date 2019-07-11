@@ -79,6 +79,19 @@ class LinkedList {
       }
     }
   }
+  kFromTheEnd(k) {
+    // if (typeof k !== 'number' || k >= this.length || k < 0) {
+    //   throw 'Exception';
+    // }
+    // if (k === 0) { return this.tail.value; }
+    let current = this.head;
+    let i = this.length - k - 1;
+    while (i > 0) {
+      current = current.next;
+      i -= 1;
+    }
+    return current.value;
+  }
 }
 
 let list = new LinkedList();
