@@ -6,8 +6,9 @@
 * [submission PR](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/pull/4)
 
 ## Table of Contents
-#### [`Code Challenges Folder`](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges)
-#### [`Data Structures Folder`]()
+
+#### [Code Challenges](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges)
+#### [Data Structures](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/data-structures)  
 
 #### DSA Implementation
    * Create a Node class that has properties for the value stored and a pointer to the next node.
