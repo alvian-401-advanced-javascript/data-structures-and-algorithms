@@ -2,10 +2,6 @@
 
 ### Author: Alvian Joseph
 
-### Links and Resources
-* [submission PR](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/pull/4)
-
-
 
 ## Table of Contents
 #### [`Code Challenges Folder`](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges)
