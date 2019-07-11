@@ -13,9 +13,9 @@ class LinkedList {
   }
 
   insert(value) {
-    const node = new Node(value); 
-    node.next = this.head; 
-    this.head = node; 
+    const node = new Node(value);
+    node.next = this.head;
+    this.head = node;
   }
 
   includes(value) {
@@ -27,6 +27,7 @@ class LinkedList {
       }
       current = current.next;
     }
+    console.log(isInList);
     return isInList;
   }
 
@@ -43,44 +44,44 @@ class LinkedList {
     current.next = new Node(value);
   }
 
-  insertBefore(beforeVal, afterVal) {
 
-    let current = this.head;
+  insertBefore(existingValue, newVal) {
+    if (existingValue) {
+      let newNode = new Node(newVal);
 
-    let nodeAfter = new Node(afterVal);
-    let nodeBefore = new Node(beforeVal);
-
-    while (current.next !== null) { //this loop is causing a crash
-      if (current.next.value === nodeAfter.value) {
-        nodeBefore.next = nodeAfter;
-        current.next = nodeBefore;
+      let current = this.head;
+      while (current !== null) {
+        if (current.next.value === existingValue) {
+          newNode.next = current.next;
+          current.next = newNode;
+          return;
+        }
+        else {
+          current = current.next;
+        }
       }
     }
-    current = current.next;
   }
 
 
-
-  insertAfter(beforeVal, afterVal) {
-
-    let current = this.head;
-
-    let nodeAfter = new Node(afterVal);
-    let nodeBefore = new Node(beforeVal);
-
-    while (current.next !== null) { //this loop is causing a crash and I'm not sure why
-      if (current.next.value === nodeBefore.value) {
-        nodeAfter.next = nodeBefore;
-        current.next = nodeAfter;
+  insertAfter(existingValue, newVal) {
+    if (existingValue) {
+      let current = this.head;
+      while (current !== null) {
+        if (current.value === existingValue) {
+          let newNode = new Node(newVal);
+          current.next = newNode;
+          return;
+        }
+        else {
+          current = current.next;
+        }
       }
     }
-    current = current.next;
   }
-
 }
 
 let list = new LinkedList();
-// list.insertBefore(2, 3); 
+
 
 module.exports = LinkedList;
-module.exports = Node;

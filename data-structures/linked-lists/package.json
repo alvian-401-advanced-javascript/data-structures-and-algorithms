@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "linked-list.js",
   "scripts": {
-    "test": "-- verbose --coverage"
+    "test": "jest -- verbose --coverage"
   },
   "keywords": [],
   "author": "",
