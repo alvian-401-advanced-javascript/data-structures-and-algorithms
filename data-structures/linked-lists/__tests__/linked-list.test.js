@@ -41,13 +41,15 @@ describe('Linked List creation', () => {
   describe('`append` method', () => {
     it('should add a node to the end of a linked list', () => {
       const list = new LinkedList();
-      list.insert(2);
-      list.append(3); //should be inserted at the end
-      list.insert(1);
+      list.append(1);
+      list.append(2); //should be inserted at the end
+      list.append(3);
+
+      console.log(list);
 
       expect(list.head.value).toEqual(1);
       expect(list.head.next.value).toEqual(2);
-      expect(list.head.next.next.value).toEqual(3);    
+      expect(list.head.next.next.value).toEqual(3);
     });
   });
 
@@ -76,9 +78,50 @@ describe('Linked List creation', () => {
       expect(list.head.value).toEqual(1);
       expect(list.head.next.value).toEqual(2); //the newly inserted value
       // expect(list.head.next.next.value).toEqual(3); // bug, values after mew insert are deleted
-      // // expect(list.head.next.next.next.value).toEqual(4);
+      // expect(list.head.next.next.next.value).toEqual(4);
     });
   });
+
+  describe('`kFromTheEnd` method', () => {
+    it('throws exception if k is greater than list.length', () => {
+    const list = new LinkedList();
+    list.append(1);
+    list.append(3);
+    list.append(8);
+    list.append(2);
+    let exception = list.kFromTheEnd(6);
+    expect(exception).toEqual('exception');
+  });
+  it('throws exception if k is equal to list.length', () => {
+    const list = new LinkedList();
+    list.append(1);
+    list.append(3);
+    list.append(8);
+    list.append(2);
+    let exception = list.kFromTheEnd(4);
+    expect(exception).toEqual('exception');
+  });
+  it('throws exception if k is less than 0', () => {
+    const list = new LinkedList();
+    list.append(1);
+    list.append(3);
+    list.append(8);
+    list.append(2);
+    let exception = list.kFromTheEnd(-1);
+    expect(exception).toEqual('exception');
+  });
+  it('returns value that is k positions from the end of list', () => {
+    const list = new LinkedList();
+    list.append(1);
+    list.append(3);
+    list.append(8);
+    list.append(2);
+    let happyCase = list.kFromTheEnd(2);
+    expect(happyCase).toEqual(3);
+  });
+  
+    
+  })
 
 });
 
