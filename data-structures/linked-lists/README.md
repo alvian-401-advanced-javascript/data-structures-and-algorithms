@@ -32,7 +32,8 @@
 #### Running the app
 * node
 
-
+#### whiteboard
+![LinkedList-WB](assets/IMG_20190711_211821_1.jpg)
   
 #### Tests
 * How do you run tests?
