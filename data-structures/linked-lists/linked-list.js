@@ -10,6 +10,10 @@ class Node {
 class LinkedList {
   constructor() {
     this.head = null;
+    this.tail = null;
+
+    this.length = 0;
+
   }
 
   insert(value) {
@@ -32,16 +36,16 @@ class LinkedList {
   }
 
   append(value) {
-    if (!this.head) {
+    if (!this.head && !this.tail) {
       this.head = new Node(value);
-      return;
+      this.tail = this.head;
+    } 
+    else {
+      this.tail.next = new Node(value);
+      this.tail = this.tail.next;
     }
+    this.length++;
 
-    let current = this.head;
-    while (current.next) {
-      current = current.next;
-    }
-    current.next = new Node(value);
   }
 
 
@@ -79,7 +83,20 @@ class LinkedList {
       }
     }
   }
+  kFromTheEnd(k) {
+    if (typeof k !== 'number' || k >= this.length || k < 0) {
+      return 'exception';
+    }
+    if (k === 0) { return this.tail.value; }
+    let current = this.head;
+    let i = this.length - k - 1;
+    while (i > 0) {
 
+      current = current.next;
+      i -= 1;
+    }
+    return current.value;
+  }
 }
 
 module.exports = LinkedList;
