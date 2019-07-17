@@ -99,18 +99,34 @@ class LinkedList {
   }
 
 
+} 
+
+function mergeLists(listA, listB) {
+  if(typeof listA !== 'object' || typeof listB !== 'object') {
+    return 'invalid argument';
+  }
+  let currenta = listA.head;
+  let currentb = listB.head;
+
+  while(currenta.next && currentb.next) {
+    currentb.next = currenta.next;
+    currenta.next = currentb;
+    currenta = currentb.next;
+    currentb = currentb.head;
+    
+  }
+  return currenta.head;
 }
-
-
-let list1 = new LinkedList();
-console.log(list1);
-list1.append(4);
-list1.append(5);
-list1.head = list.head.next;
 
 let list = new LinkedList();
 list.append(1);
 list.append(2);
 list.append(3);
-console.log(list);
-module.exports = LinkedList;
+
+let list2 = new LinkedList();
+list2.append(4);
+list2.append(5);
+list2.append(6);
+
+mergeLists(list, list2);
+console.log('list 1', list);
