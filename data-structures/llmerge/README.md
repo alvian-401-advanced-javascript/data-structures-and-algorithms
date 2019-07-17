@@ -48,7 +48,7 @@
 * node
 
 #### whiteboard
-![ll-merge-wb]()
+![ll-merge-wb](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/blob/master/data-structures/llmerge/assets/image_from_ios.jpg?raw=true)
   
 #### Tests
 * How do you run tests?
