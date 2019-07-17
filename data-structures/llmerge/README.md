@@ -3,7 +3,7 @@
 ### Author: Alvian Joseph
 
 ### Links and Resources
-* [submission PR](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/pull/4)
+* [submission PR](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/data-structures/llmerge)
 * [![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms)
 
 ## Table of Contents
