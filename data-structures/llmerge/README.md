@@ -31,18 +31,6 @@
 #### ll-merge
    * adds function called `mergeLists()` which takes two linked lists as arguments, zips the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list
    
-   notes:
-   typecheck (must be object?)
-   set current to head for both lists
-   if there is no currenta, return currentb, vice versa
-   iterate while current.next is true for both
-   b.head = b.next
-   b.next = a.next
-   a.next = currentb
-   currenta = currentb.next
-   currentb = b.head
-   if currentb = currenta.next = currentb
-   return a.head
 
 #### Running the app
 * node
