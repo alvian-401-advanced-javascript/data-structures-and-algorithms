@@ -118,15 +118,4 @@ function mergeLists(listA, listB) {
   return currenta.head;
 }
 
-let list = new LinkedList();
-list.append(1);
-list.append(2);
-list.append(3);
-
-let list2 = new LinkedList();
-list2.append(4);
-list2.append(5);
-list2.append(6);
-
-mergeLists(list, list2);
-console.log('list 1', list);
+module.exports = LinkedList;

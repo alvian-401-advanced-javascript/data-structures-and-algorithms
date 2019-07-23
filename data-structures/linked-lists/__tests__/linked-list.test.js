@@ -1,6 +1,6 @@
 'use strict';
 
-const LinkedList = require('../linked-list.js');
+const LinkedList = require('../linked-list');
 
 
 describe('Linked List creation', () => {
@@ -84,44 +84,44 @@ describe('Linked List creation', () => {
 
   describe('`kFromTheEnd` method', () => {
     it('throws exception if k is greater than list.length', () => {
-    const list = new LinkedList();
-    list.append(1);
-    list.append(3);
-    list.append(8);
-    list.append(2);
-    let exception = list.kFromTheEnd(6);
-    expect(exception).toEqual('exception');
+      const list = new LinkedList();
+      list.append(1);
+      list.append(3);
+      list.append(8);
+      list.append(2);
+      let exception = list.kFromTheEnd(6);
+      expect(exception).toEqual('exception');
+    });
+    it('throws exception if k is equal to list.length', () => {
+      const list = new LinkedList();
+      list.append(1);
+      list.append(3);
+      list.append(8);
+      list.append(2);
+      let exception = list.kFromTheEnd(4);
+      expect(exception).toEqual('exception');
+    });
+    it('throws exception if k is less than 0', () => {
+      const list = new LinkedList();
+      list.append(1);
+      list.append(3);
+      list.append(8);
+      list.append(2);
+      let exception = list.kFromTheEnd(-1);
+      expect(exception).toEqual('exception');
+    });
+    it('returns value that is k positions from the end of list', () => {
+      const list = new LinkedList();
+      list.append(1);
+      list.append(3);
+      list.append(8);
+      list.append(2);
+      let happyCase = list.kFromTheEnd(2);
+      expect(happyCase).toEqual(3);
+    });
+
+
   });
-  it('throws exception if k is equal to list.length', () => {
-    const list = new LinkedList();
-    list.append(1);
-    list.append(3);
-    list.append(8);
-    list.append(2);
-    let exception = list.kFromTheEnd(4);
-    expect(exception).toEqual('exception');
-  });
-  it('throws exception if k is less than 0', () => {
-    const list = new LinkedList();
-    list.append(1);
-    list.append(3);
-    list.append(8);
-    list.append(2);
-    let exception = list.kFromTheEnd(-1);
-    expect(exception).toEqual('exception');
-  });
-  it('returns value that is k positions from the end of list', () => {
-    const list = new LinkedList();
-    list.append(1);
-    list.append(3);
-    list.append(8);
-    list.append(2);
-    let happyCase = list.kFromTheEnd(2);
-    expect(happyCase).toEqual(3);
-  });
-  
-    
-  })
 
 });
 
