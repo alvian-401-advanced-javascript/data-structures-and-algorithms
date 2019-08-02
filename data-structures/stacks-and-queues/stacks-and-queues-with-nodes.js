@@ -15,8 +15,8 @@ class Stack {
     this.length = 0;
   }
 
-  push(val) {
-    const node = new Node(val);
+  push(value) {
+    const node = new Node(value);
     node.next = this.top;
     this.top = node;
     this.length++;
@@ -61,16 +61,15 @@ class Queue {
   }
 
   dequeue() {
-    if (!this.length || this.length <= 0) { return 'Queue is already empty';}
-    let temp = this.front;
-    this.front = temp.next;
-    this.length--;
-
-    if(!this.front) { 
-      this.rear = null;
-      return temp.value;
+    if (this.front !== null) { 
+      let first = this.front;
+      this.front = this.front.next; 
+      this.length--;
+      return first.value;
+    } else {
+      if (this.back !== null) { this.back = null; }
+      return 'Cannot dequeue because queue is empty';
     }
-    
   }
 
   peek() {
