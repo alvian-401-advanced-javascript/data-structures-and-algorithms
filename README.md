@@ -7,7 +7,7 @@
 ## Table of Contents
 
 #### [Code Challenges](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges)
-  * placeholder
+   * [fifoAnimalStructure](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/fifoAnimalShelter)
 
 
 
@@ -16,7 +16,8 @@
 #### [Data Structures](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/data-structures)  
  * [Linked-Lists](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/data-structures/linked-lists)
   * [ll-merge](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/data-structures/llmerge)  
-  * [Stacks and Queues](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/stacks-and-queues/data-structures/stacks-and-queues)
+  * [Stacks and Queues](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/stacks-and-queues/data-structures/stacks-and-queues)  
+ 
   
   
 
