@@ -1,7 +1,6 @@
 ## Code Challenge 12: First-in, First-out Animal Shelter
-[PR]()
-
-[![Build Status]()
+[PR](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/pull/17)  
+[![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms)
 
 # FIFO Animal Shelter
 
