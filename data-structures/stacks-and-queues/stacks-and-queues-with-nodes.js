@@ -40,7 +40,6 @@ class Stack {
 
 }
 
-
 class Queue {
   constructor() {
     this.front = null;
