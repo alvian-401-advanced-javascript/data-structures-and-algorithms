@@ -1,8 +1,8 @@
-## Code Challenge 12: First-in, First-out Animal Shelter
-[PR](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/pull/17)  
-[![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms)
+
 
 # FIFO Animal Shelter
+[PR](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/pull/17)  
+[![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms)
 
 ## Challenge
 * Create a class called `AnimalShelter` which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
