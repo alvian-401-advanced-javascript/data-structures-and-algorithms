@@ -1,4 +1,10 @@
-Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+# Code Challenge - Multi-bracket Validation
+[![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms)
+[PR]()
+
+
+## Features
+Write a function, `multiBracketValidation()` that takes a string as its only argument, it should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
 
 Round Brackets : ()
 Square Brackets : []
@@ -13,11 +19,4 @@ Input	Output
 [({}]	FALSE
 (](	FALSE
 {(})	FALSE
-Consider these small examples and why they fail.
 
-Input	Output	Why
-{	FALSE	error unmatched opening { remaining.
-)	FALSE	error closing ) arrived without corresponding opening.
-[}	FALSE	error closing }. Doesn’t match opening (.
-Requirements
-Ensure your complete solution follows the standard requirements.
