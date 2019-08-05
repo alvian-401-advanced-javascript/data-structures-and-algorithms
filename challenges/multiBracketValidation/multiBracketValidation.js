@@ -4,18 +4,38 @@ const { Stack, Node } = require('../../data-structures/stacks-and-queues/stacks-
 
 
 const multiBracketValidation = (str) => {
-  if (typeof str !== 'string') { return null; }
+  if (typeof str !== 'string') {
+    console.log('invalid entry, must be string');
+    return null;
+  }
+  const stack = new Stack();
 
-  const st = new Stack();
-  const opener = /[([{]/g;
-  const closer = /[)\]}]/g;
+  for (let i = 0; i < str.length; i++) {
 
-  const matchers = {
-    '(': ')',
-    '[': ']',
-    '{': '}',
-  };
+    if (str.charAt(i) === '(' || str.charAt(i) === '{' || str.charAt(i) === '[') {
+      stack.push(str.charAt(i));
+    }
 
+    if (str.charAt(i) === ')' || str.charAt(i) === '}' || str.charAt(i) === ']') {
+      let opener = stack.pop();
+      let joined = opener.concat(str.charAt(i));
+      if (joined === '[]' || joined === '()' || joined === '{}') {
+        continue;
+      }
+      else {
+        console.log('not balanced');
+        return false;
+      }
+    }
+  }
+  if (stack.length > 0) {
+    console.log('not balanced');
+    return false;
+  }
+  console.log('perfectly balanced');
+  return true;
 };
+
+multiBracketValidation('[({})');
 
 module.exports = multiBracketValidation;
