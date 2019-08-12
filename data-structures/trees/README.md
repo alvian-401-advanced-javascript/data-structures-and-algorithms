@@ -12,6 +12,9 @@
 * Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
 * Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
 
+# Breadth First
+* Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
+
 
 ## Testing
 
@@ -21,3 +24,8 @@
 * Can successfully return a collection from a preorder traversal
 * Can successfully return a collection from an inorder traversal
 * Can successfully return a collection from a postorder traversal
+
+
+##Whiteboards
+
+![breadth-first](assets/BFT.jpg)
