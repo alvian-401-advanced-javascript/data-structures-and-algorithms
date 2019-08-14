@@ -19,43 +19,76 @@ class BinaryTree {
     }
   }
 
-  breadthFirst() {
-    const q = new Queue();
-    let current = this.root;
-    const values = [];
-    if (!current) {
+  findMaxVal() {
+    if (this.root === null) {
       return null;
     }
-    q.enqueue(current);
-    while (q.peek()) {
-      current = q.dequeue();
-      values.push(current.value);
-      if (current.left) {
-        q.enqueue(current.left);
-      }
-      if (current.right) {
-        q.enqueue(current.right);
-      }
+    let currNode = this.root;
+
+    while (currNode.right !== null) {
+      currNode = currNode.right;
     }
-    return values;
+    console.log(currNode.value);
+    return currNode.value;
   }
 
-  add(value) {
+  breadthFirst() {
+    // const q = new Queue();
+    let current = this.root;
+    let values = [];
+    const sortedValues = [];
+    if (!current) { return null;}
+    values.push(current);
+    while (values.length) {
+      let temp = values.shift();
+      sortedValues.push(temp.value);
+      if (temp.left) { values.push(temp.left); }
+      if (temp.right) { values.push(temp.right); }
+    }
+    console.log(sortedValues);
+    return sortedValues;
+  }
+
+  insert(value) { //AJ: credit  JavaScript Data Structures and Algorithms by Sammie Bae
     let node = new Node(value);
     if (!this.root) {
+      //if there is no root value yet
       this.root = node;
-    }
-    if (this.root.value < value) {
-      this.root.right = new Node(value);
     } else {
-      this.root.left = new Node(value);
+      //loop traverse until
+      let currentRoot = this.root;
+      while (currentRoot) {
+        if (currentRoot.value > value) {
+          //let's increment if it's not a null and insert if it is a null
+          if (currentRoot.left != null) {
+            currentRoot = currentRoot.left;
+          } else {
+            currentRoot.left = node;
+            break;
+          }
+        } else if (currentRoot.value < value) {
+          //if bigger than current, put it on the right
+          //let's increment if it's not a null and insert if it is a null
+          if (currentRoot.right != null) {
+            currentRoot = currentRoot.right;
+          } else {
+            currentRoot.right = node;
+            break;
+          }
+        } else {
+          //case that both are the same
+          break;
+        }
+      }
     }
   }
+
 
   preOrder() {
     let results = new Queue();
 
     let _walk = (node) => {
+      console.log(node.value);
       results.enqueue(node.value);
       if (node.left) { _walk(node.left); }
 
@@ -63,6 +96,7 @@ class BinaryTree {
     };
     _walk(this.root);
 
+    console.log(results);
     return results;
   }
 
@@ -79,12 +113,13 @@ class BinaryTree {
     };
     _walk(this.root);
 
+    console.log(results);
     return results;
   }
 
   inOrder() {
     let results = new Queue();
-
+    
     let _walk = (node) => {
       if (node.left) { _walk(node.left); }
 
@@ -94,6 +129,7 @@ class BinaryTree {
     };
     _walk(this.root);
 
+    console.log(results);
     return results;
   }
 
@@ -133,6 +169,18 @@ class BinarySearchTree {
     }
   }
 }
+
+let tree = new BinaryTree();
+tree.insert(1);
+tree.insert(2);
+tree.insert(3);
+tree.insert(4);
+tree.insert(5);
+tree.insert(6);
+
+
+tree.preOrder();
+
 
 
 module.exports = { BinaryTree, BinarySearchTree, Node, Queue };

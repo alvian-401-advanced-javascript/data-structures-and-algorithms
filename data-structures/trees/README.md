@@ -15,6 +15,9 @@
 # Breadth First
 * Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
 
+# findMaxVal
+* Write a function called find-maximum-value which takes binary tree as its only input. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
 
 ## Testing
 
@@ -29,3 +32,4 @@
 ##Whiteboards
 
 ![breadth-first](assets/BFT.jpg)
+![findMaxVal](assets/getMaxVal.jpg)
