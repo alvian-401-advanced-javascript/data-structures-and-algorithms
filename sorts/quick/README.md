@@ -1,7 +1,5 @@
 ## Sorts: Implement Quick Sort
-[PR]()
-
-[![Build Status]()
+[![Build Status](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms.svg?branch=master)](https://www.travis-ci.com/alvian-401-advanced-javascript/data-structures-and-algorithms)
 
 # Insertion Sort
 
