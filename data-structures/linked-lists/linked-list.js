@@ -118,4 +118,4 @@ function mergeLists(listA, listB) {
   return currenta.head;
 }
 
-module.exports = LinkedList;
+module.exports = {LinkedList, Node};
