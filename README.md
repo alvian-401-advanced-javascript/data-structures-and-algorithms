@@ -27,6 +27,8 @@
  * [insertion sort](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/sorts/insertion) 
  * [merge sort](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/sorts/merge)
  * [quick sort](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/sorts/quick)
+ 
+ ### [Hash Tables](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/hashtables)
 
 
   
