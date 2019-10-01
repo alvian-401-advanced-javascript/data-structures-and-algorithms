@@ -9,7 +9,8 @@
 #### [Code Challenges](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges)
    * [fifoAnimalStructure](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/fifoAnimalShelter)
    * [multiBracketValidation](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/multiBracketValidation)  
-   * [fizzBuzzTree](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/fizzBuzzTree)  
+   * [fizzBuzzTree](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/fizzBuzzTree) 
+   * [repeatedWord](https://github.com/alvian-401-advanced-javascript/data-structures-and-algorithms/tree/master/challenges/repeatedWord)
 
 
 
